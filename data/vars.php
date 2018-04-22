@@ -1,6 +1,6 @@
 <?php
 //App Name
-$app_name = 'nimble_dev';
+$app_name = 'nimble';
 //Main colors
 $main_color = '#64b5f6';
 $second_color = '#7a7a7a';
