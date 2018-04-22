@@ -1,0 +1,15 @@
+.card{
+ border-radius: 10px; 
+}
+
+.card .card-image img{
+  border-radius: 10px;
+}
+
+.card .card-image .card-title{
+  padding: 6px;
+}
+
+.card .card-title{
+  font-size: 18px;
+}
