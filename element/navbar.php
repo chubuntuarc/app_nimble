@@ -8,9 +8,7 @@
         <li><a href="sass.html"><i class="material-icons">stars</i></a></li>
        <li><a href="sass.html"><i class="material-icons">restaurant_menu</i></a></li>
        <li><a href="sass.html"><i class="material-icons">favorite</i></a></li>-->
-        <li><a class="tooltipped" data-position="bottom" data-tooltip="Mis gustos" href="likes.php"><i class="material-icons">grade</i></a></li>
-        <li><a class="tooltipped" data-position="bottom" data-tooltip="Inventario" href="inventory.php"><i class="material-icons">description</i></a></li>
-       <li><a class="tooltipped" data-position="bottom" data-tooltip="Lista de compras" href="list.php"><i class="material-icons">shopping_cart</i></a></li>
+        <li><a class="tooltipped" data-position="bottom" data-tooltip="Inventario" href="stock.php"><i class="material-icons">storage</i></a></li>
         <li><a href="#!" data-activates="slide-out" class="account">Mi cuenta</a></li> 
       </ul>
       <ul class="side-nav" id="mobile-demo">
