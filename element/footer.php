@@ -25,6 +25,7 @@
 <script>
 $(".account").sideNav();
 $(".button-collapse").sideNav();
+ $('.modal').modal();
 </script>
       
     </body>

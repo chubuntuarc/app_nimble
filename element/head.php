@@ -2,7 +2,7 @@
   <html>
     <head>
        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title><?php echo "Agiliza tus  - ".$app_name; ?></title>
+      <title><?php echo "Agiliza tus ideas - ".$app_name; ?></title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">

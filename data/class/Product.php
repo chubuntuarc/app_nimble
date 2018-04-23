@@ -53,7 +53,7 @@ class Product {
       $this->sale_price = $sale_price;
    }
   //Construct
-  public function __construct($name, $description=null, $picture=null, $id_category, $real_price, $sale_price, $id_product) {
+  public function __construct($name, $description=null, $picture=null, $id_category, $real_price, $sale_price, $id_product=null) {
       $this->name = $name;
       $this->description = $description;
       $this->picture = $picture;
@@ -88,6 +88,18 @@ class Product {
       }
       $connect = null;
    }
+  //Set product stock
+   public static function setStock($quantity, $quantity_min, $operation){
+       $last_id = Product::getLastId();
+       $connect = new Connect();
+     if($operation == 'new'){
+       $query = $connect->prepare('INSERT INTO stock (id_product, quantity, quantity_min) VALUES (:id_product, :quantity, :quantity_min)');
+     }
+       $query->bindParam(':quantity', $quantity);
+       $query->bindParam(':quantity_min', $quantity_min);
+       $query->bindParam(':id_product', $last_id);
+       $query->execute();
+    }
   //Search product by ID
    public static function searchById($id_product){
        $connect = new Connect();
@@ -116,6 +128,14 @@ class Product {
        $query = $connect->prepare('DELETE FROM ' . self::Table . ' WHERE id_product = :id_product');
        $query->bindParam(':id_product', $id_product);
        $query->execute();
+    }
+  //Get last insert id
+   public static function getLastId(){
+       $connect = new Connect();
+       $query = $connect->prepare('SELECT id_product FROM products ORDER BY id_product DESC LIMIT 1');
+       $query->execute();
+       $response = $query->fetch();
+       return $response['id_product'];
     }
   
 }
