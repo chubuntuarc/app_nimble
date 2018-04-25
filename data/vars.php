@@ -1,4 +1,5 @@
 <?php
+setlocale(LC_ALL,"es_ES");
 //App Name
 $app_name = 'nimble';
 //Main colors

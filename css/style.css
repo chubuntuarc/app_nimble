@@ -19,7 +19,7 @@ if it's not present, don't show loader */
 
 .brand-logo{
 	font-family: 'Righteous', cursive !important;
-	font-size: 3rem !important;
+	font-size: 24px !important;
 }
 
 .card .card-image .img{
