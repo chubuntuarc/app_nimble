@@ -38,3 +38,23 @@
       <script src="../app_nimble/js/materialize.min.js"></script>
       
       <div class="se-pre-con"></div>
+      
+       <p class="message">Hola este es un mensaje</p>  
+      
+      <script>
+        $(document).ready(function(){
+          $('.message').hide();
+         });
+        setInterval(function() {
+            if(!navigator.onLine)
+        {
+          $('.message').show();
+          $('.message').text('Revisa tu conectividad');
+          $('.message').css('background-color', '#f44336');
+        }else{
+          $('.message').hide();
+        }
+          }, 5000);
+      </script>
+      
+      

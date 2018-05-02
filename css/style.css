@@ -17,6 +17,16 @@ if it's not present, don't show loader */
 	font-family: 'Ubuntu', sans-serif;
 }
 
+.message{
+      position: fixed;
+    bottom: -15px;
+    width: 100%;
+    z-index: 999;
+    color: #FFF;
+    background-color: #64b5f6;
+    padding-left:10px;
+}
+
 .circle-btn {
   width: 40px !important;
   height: 32px;
