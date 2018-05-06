@@ -25,6 +25,8 @@
     var pathname = window.location.pathname;
     if(pathname == '/nimble_pos/'){
       $('#module-name').text('Punto de venta');
+       }else if(pathname == '/nimble_tickets/'){
+      $('#module-name').text('Tickets de servicio');
        }
     $('.tooltipped').tooltip();
   });

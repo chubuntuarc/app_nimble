@@ -17,6 +17,10 @@ if it's not present, don't show loader */
 	font-family: 'Ubuntu', sans-serif;
 }
 
+.tabs .indicator{
+  background-color: #64b5f6 !important;
+}
+
 .message{
       position: fixed;
     bottom: -15px;

@@ -10,7 +10,7 @@ include_once 'element/navbar.php';
 //Side bar
 include_once 'element/sidebar.php';
 //html tags
-echo '<div class="row" style="height: 60px;margin-top: 60px;background-color: '.$main_color.';"></div>';
+echo '<div class="row" style="height: 30px;margin-top: 50px;background-color: '.$main_color.';margin-bottom: 0px;"></div>';
 ?>
 
 <div class="row">
