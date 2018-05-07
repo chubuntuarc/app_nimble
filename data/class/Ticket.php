@@ -11,5 +11,14 @@ class Ticket{
        $response = $query->fetchAll();
        return $response;
     }
+  
+  //Get message from ticket
+  public static function getTicketMessages($id_ticket){
+     $connect = new Connect();
+    $query = $connect->prepare('SELECT * FROM ticket_messages WHERE id_ticket = ' . $id_ticket);
+    $query->execute();
+    $response = $query->fetchAll();
+    return $response;
+  }
 }
 ?>
